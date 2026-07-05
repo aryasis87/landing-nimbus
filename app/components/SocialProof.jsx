@@ -18,7 +18,7 @@ const testimonials = [
     name: "Elizabeth Jeff",
     role: "Pelanggan Terverifikasi",
     quote:
-      "Dengan Next-Gen Cloud, kami merasakan kemudahan dalam mengelola data dan mengoptimalkan performa aplikasi kami. Layanan ini sangat andal.",
+      "Dengan Nimbus Cloud, kami merasakan kemudahan dalam mengelola data dan mengoptimalkan performa aplikasi kami. Layanan ini sangat andal.",
     image: "/images/pp2.png",
     isHighlighted: true,
   },

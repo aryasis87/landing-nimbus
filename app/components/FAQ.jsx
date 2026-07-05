@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "Apa itu Next-Gen Cloud?",
+    question: "Apa itu Nimbus Cloud?",
     answer:
-      "Next-Gen Cloud adalah platform cloud modern yang dirancang untuk mengoptimalkan kinerja dan skalabilitas bisnis Anda dengan teknologi terbaru dan keamanan tingkat tinggi.",
+      "Nimbus Cloud adalah platform cloud modern yang dirancang untuk mengoptimalkan kinerja dan skalabilitas bisnis Anda dengan teknologi terbaru dan keamanan tingkat tinggi.",
   },
   {
     question: "Apakah ada trial gratis?",

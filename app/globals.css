@@ -14,7 +14,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+h1, h2, h3 { font-family: var(--font-grotesk), system-ui, sans-serif; letter-spacing: -0.025em; }
+
+/* Nimbus: langit gradien + awan blur */
+.sky-mesh {
+  background-image:
+    radial-gradient(36rem 24rem at 15% -5%, rgba(56, 132, 255, 0.16), transparent 60%),
+    radial-gradient(30rem 22rem at 90% 0%, rgba(103, 232, 249, 0.18), transparent 55%);
 }
 
 /* Shapes with colors */

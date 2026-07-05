@@ -90,7 +90,7 @@ export default function Hero() {
         animate="visible"
         custom={0}
       >
-        Kembangkan Bisnis bersama<br/><span className="text-4xl md:text-7xl lg:text-8xl bg-gradient-to-l from-gray-800 via-white to-white bg-clip-text text-transparent font-extrabold">NextGenCloud</span>
+        Kembangkan Bisnis bersama<br/><span className="text-4xl md:text-7xl lg:text-8xl bg-gradient-to-l from-gray-800 via-white to-white bg-clip-text text-transparent font-extrabold">NimbusCloud</span>
       </motion.h1>
 
       <motion.p
