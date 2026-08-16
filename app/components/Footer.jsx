@@ -1,8 +1,8 @@
 "use client"
 export default function Footer() {
     return (
-      <footer className="py-3 text-center text-gray-500 bg-black">
-        <p>© 2025 CloudTech Solutions. All rights reserved.</p>
+      <footer className="bg-vapor py-3 text-center text-frost/70">
+        <p>© {new Date().getFullYear()} Nimbus. All rights reserved.</p>
       </footer>
     );
   }

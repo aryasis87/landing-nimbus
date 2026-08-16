@@ -54,28 +54,28 @@ export default function Hero() {
 
       {/* Shapes */}
       <motion.div
-        className="shape shape-circle bg-blue-400 w-32 h-32 rounded-full absolute top-20 left-20 z-0"
+        className="shape shape-circle bg-uptime w-32 h-32 rounded-full absolute top-20 left-20 z-0"
         variants={shapeVariants}
         initial="hidden"
         animate="visible"
         custom={0}
       />
       <motion.div
-        className="shape shape-square bg-purple-400 w-28 h-28 rounded-lg absolute bottom-32 right-20 z-0"
+        className="shape shape-square bg-uptime w-28 h-28 rounded-lg absolute bottom-32 right-20 z-0"
         variants={shapeVariants}
         initial="hidden"
         animate="visible"
         custom={1}
       />
       <motion.div
-        className="shape shape-triangle bg-yellow-400 w-24 h-24 absolute top-1/2 left-1/3 z-0"
+        className="shape shape-triangle bg-uptime w-24 h-24 absolute top-1/2 left-1/3 z-0"
         variants={shapeVariants}
         initial="hidden"
         animate="visible"
         custom={2}
       />
       <motion.div
-        className="shape shape-hexagon bg-red-400 w-36 h-36 rounded-lg absolute top-1/4 right-1/4 z-0"
+        className="shape shape-hexagon bg-uptime w-36 h-36 rounded-lg absolute top-1/4 right-1/4 z-0"
         variants={shapeVariants}
         initial="hidden"
         animate="visible"
@@ -84,22 +84,18 @@ export default function Hero() {
 
       {/* Hero Text */}
       <motion.h1
-        className="text-3xl md:text-6xl lg:text-6xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-white to-white z-10 px-3 md:px-10 max-w-full md:max-w-2xl lg:max-w-7xl"
+        className="text-3xl md:text-6xl lg:text-6xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-vapor-2 via-white to-white z-10 px-3 md:px-10 max-w-full md:max-w-2xl lg:max-w-7xl"
         variants={textVariants}
         initial="hidden"
         animate="visible"
         custom={0}
       >
-        Kembangkan Bisnis bersama<br/><span className="text-4xl md:text-7xl lg:text-8xl bg-gradient-to-l from-gray-800 via-white to-white bg-clip-text text-transparent font-extrabold">NimbusCloud</span>
+        Kembangkan Bisnis bersama<br/><span className="text-4xl md:text-7xl lg:text-8xl bg-gradient-to-l from-vapor-2 via-white to-white bg-clip-text text-transparent font-extrabold">NimbusCloud</span>
       </motion.h1>
 
-      <motion.p
-        className="text-lg md:text-xl max-w-3xl px-2 md:px-10 lg:px-0 text-gray-300 z-10"
-        variants={textVariants}
-        initial="hidden"
-        animate="visible"
-        custom={1}
-      >
+      {/* Paragraf pembuka adalah isi utama: tidak dikunci pada opacity 0 supaya
+          tetap terbaca walau rantai animasinya gagal berjalan. */}
+      <motion.p className="z-10 max-w-3xl px-2 text-lg text-frost-dim md:px-10 md:text-xl lg:px-0">
         Rasakan kecepatan dan keamanan infrastruktur cloud yang didukung AI untuk
         mempercepat pertumbuhan bisnis Anda.
       </motion.p>
@@ -112,7 +108,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.6 }}
       >
         <motion.button
-          className="px-5 py-3 bg-blue-400 text-white rounded-full font-medium hover:scale-105 transition"
+          className="px-5 py-3 bg-uptime text-frost rounded-full font-medium hover:scale-105 transition"
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"
@@ -120,7 +116,7 @@ export default function Hero() {
           Mulai Secara Gratis
         </motion.button>
         <motion.button
-          className="px-4 py-3 border border-white text-white rounded-full transition"
+          className="px-4 py-3 border border-white text-frost rounded-full transition"
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"

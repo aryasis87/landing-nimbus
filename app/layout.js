@@ -1,4 +1,5 @@
 import { Space_Grotesk, Inter } from "next/font/google";
+import MotionProvider from "./components/MotionProvider";
 import "./globals.css";
 
 const grotesk = Space_Grotesk({ variable: "--font-grotesk", subsets: ["latin"], weight: ["500", "600", "700"] });
@@ -42,7 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="id">
       <body className={`${grotesk.variable} ${inter.variable} antialiased`}>
-        {children}
+        <MotionProvider>{children}</MotionProvider>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
         </body>
     </html>

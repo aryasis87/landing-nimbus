@@ -1,69 +1,38 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ==========================================================================
+   nimbus — bahasa rupa HALAMAN STATUS.
+   Layanan awan dinilai dari nyala hijau di papan status. Motifnya titik
+   status, garis waktu, dan angka uptime.
+   ========================================================================== */
+
+@theme {
+  --color-vapor: #0e1116; /* papan gelap */
+  --color-vapor-2: #171b22;
+  --color-frost: #eef2f7; /* teks utama */
+  --color-frost-dim: #576172; /* teks sekunder */
+  --color-uptime: #106b46; /* hijau nyala */
+  --color-uptime-2: #157a50;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body { font-family: var(--font-inter), system-ui, sans-serif; background-color: var(--color-frost); color: var(--color-uptime); }
+  h1, h2, h3 { font-family: var(--font-grotesk), system-ui, sans-serif; letter-spacing: -0.02em; }
+}
+
+.status-dot { width: 8px; height: 8px; border-radius: 9999px; background: currentColor; }
+.status-label { font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), system-ui, sans-serif;
-}
 
-h1, h2, h3 { font-family: var(--font-grotesk), system-ui, sans-serif; letter-spacing: -0.025em; }
-
-/* Nimbus: langit gradien + awan blur */
-.sky-mesh {
-  background-image:
-    radial-gradient(36rem 24rem at 15% -5%, rgba(56, 132, 255, 0.16), transparent 60%),
-    radial-gradient(30rem 22rem at 90% 0%, rgba(103, 232, 249, 0.18), transparent 55%);
-}
-
-/* Shapes with colors */
-.shape {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 20%;
-  opacity: 0.8;
-  filter: blur(10px);
-  transition: transform 0.2s ease-out;
-}
-
-.shape-circle {
-  border-radius: 50%;
-  background: radial-gradient(circle, #60a5fa, #3b82f6);
-}
-
-.shape-square {
-  border-radius: 10%;
-  background: linear-gradient(135deg, #f87171, #ef4444);
-}
-
-.shape-triangle {
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-  border-bottom: 80px solid #a78bfa;
-  background: none;
-}
-
-.shape-hexagon {
-  clip-path: polygon(
-    50% 0%,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0% 75%,
-    0% 25%
-  );
-  background: linear-gradient(135deg, #34d399, #059669);
+:where(a, button, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--color-uptime);
+  outline-offset: 3px;
 }

@@ -8,34 +8,34 @@ const features = [
     title: "Kinerja Cepat & Andal",
     description: "Dukungan server cloud berkecepatan tinggi untuk kelancaran operasional bisnis Anda.",
     icon: <FaRocket />,
-    bgColor: "bg-sky-100 text-sky-800",
+    bgColor: "bg-uptime/12 text-uptime",
   },
   {
     id: 2,
     title: "Keamanan Terjamin",
     description: "Enkripsi canggih untuk melindungi data penting Anda dari ancaman siber.",
     icon: <FaLock />,
-    bgColor: "bg-emerald-100 text-emerald-800",
+    bgColor: "bg-uptime/12 text-uptime",
   },
   {
     id: 3,
     title: "Skalabilitas Fleksibel",
     description: "Sesuaikan kapasitas server sesuai kebutuhan bisnis Anda, tanpa batasan.",
     icon: <FaChartLine />,
-    bgColor: "bg-amber-100 text-amber-800",
+    bgColor: "bg-uptime/12 text-uptime",
   },
   {
     id: 4,
     title: "Integrasi AI",
     description: "Optimalkan analisis data dan otomatisasi dengan teknologi AI terbaru.",
     icon: <FaRobot />,
-    bgColor: "bg-violet-100 text-violet-800",
+    bgColor: "bg-uptime/12 text-uptime",
   },
 ];
 
 export default function KeyFeatures() {
   return (
-    <section id="key-features" className="py-24 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-gray-100 to-white text-gray-900">
+    <section id="key-features" className="py-24 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-vapor-2 to-white text-vapor">
       <div className="max-w-7xl mx-auto text-center">
         
         {/* Judul */}
@@ -49,7 +49,7 @@ export default function KeyFeatures() {
           Fitur Utama Kami
         </motion.h2>
 
-        <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-12">
+        <p className="text-lg sm:text-xl text-frost-dim max-w-2xl mx-auto mb-12">
           Temukan bagaimana teknologi kami membantu Anda mengembangkan bisnis dengan lebih cepat dan aman.
         </p>
 

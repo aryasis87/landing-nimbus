@@ -9,7 +9,7 @@ const showcases = [
     description:
       "Mengoptimalkan infrastruktur cloud untuk kinerja maksimal dan skalabilitas yang mudah.",
     image: "/images/home.png",
-    bgColor: "bg-sky-100",
+    bgColor: "bg-uptime/12",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const showcases = [
     description:
       "Melindungi data Anda dengan enkripsi mutakhir dan sistem keamanan berlapis.",
     image: "/images/security.png",
-    bgColor: "bg-emerald-100",
+    bgColor: "bg-uptime/12",
   },
   {
     id: 3,
@@ -25,19 +25,19 @@ const showcases = [
     description:
       "Menggabungkan kecerdasan buatan untuk meningkatkan efisiensi dan produktivitas operasional.",
     image: "/images/ai.png",
-    bgColor: "bg-indigo-100",
+    bgColor: "bg-uptime/12",
   },
 ];
 
 const shapes = [
-  { top: "15%", left: "10%", size: "120px", color: "bg-sky-300" },
-  { top: "50%", left: "85%", size: "150px", color: "bg-emerald-300" },
-  { top: "70%", left: "30%", size: "180px", color: "bg-indigo-300" },
+  { top: "15%", left: "10%", size: "120px", color: "bg-uptime" },
+  { top: "50%", left: "85%", size: "150px", color: "bg-uptime" },
+  { top: "70%", left: "30%", size: "180px", color: "bg-uptime" },
 ];
 
 export default function VisualShowcase() {
   return (
-    <section className="relative py-24 px-6 sm:px-12 lg:px-20 bg-white text-gray-900 overflow-hidden">
+    <section className="relative py-24 px-6 sm:px-12 lg:px-20 bg-frost text-vapor overflow-hidden">
       {/* Floating Shapes */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
         {shapes.map((shape, index) => (
@@ -68,7 +68,7 @@ export default function VisualShowcase() {
           Solusi Cloud Kami
         </motion.h2>
 
-        <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-frost-dim mb-12 max-w-3xl mx-auto">
           Temukan inovasi dan keunggulan infrastruktur cloud kami yang mengutamakan kecepatan, keamanan, dan integrasi cerdas.
         </p>
 
@@ -93,7 +93,7 @@ export default function VisualShowcase() {
                 />
               </div>
               <h3 className="text-2xl font-semibold mb-2">{showcase.title}</h3>
-              <p className="text-gray-600">{showcase.description}</p>
+              <p className="text-frost-dim">{showcase.description}</p>
             </motion.div>
           ))}
         </div>

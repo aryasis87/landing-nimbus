@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const shapes = [
-  { top: "10%", left: "15%", size: "120px", color: "bg-sky-700" },
-  { top: "60%", left: "70%", size: "110px", color: "bg-rose-900" },
-  { top: "70%", left: "30%", size: "50px", color: "bg-lime-500" },
+  { top: "10%", left: "15%", size: "120px", color: "bg-uptime" },
+  { top: "60%", left: "70%", size: "110px", color: "bg-uptime" },
+  { top: "70%", left: "30%", size: "50px", color: "bg-uptime" },
 ];
 
 export default function CTA() {
@@ -18,7 +18,7 @@ export default function CTA() {
   }, []);
 
   return (
-    <section className="relative py-32 px-6 sm:px-12 lg:px-20 bg-gray-900 text-white overflow-hidden">
+    <section className="relative py-32 px-6 sm:px-12 lg:px-20 bg-vapor text-frost overflow-hidden">
       {/* Animated Shapes */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
         {shapes.map((shape, index) => (
@@ -61,7 +61,7 @@ export default function CTA() {
         </motion.h2>
 
         <motion.p
-          className="text-lg sm:text-xl text-gray-400 mb-12"
+          className="text-lg sm:text-xl text-frost-dim mb-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -71,7 +71,7 @@ export default function CTA() {
         </motion.p>
 
         <motion.button
-          className="relative bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-3 px-10 rounded-full font-medium shadow-lg overflow-hidden"
+          className="relative bg-gradient-to-r from-uptime to-uptime text-frost py-3 px-10 rounded-full font-medium shadow-lg overflow-hidden"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
