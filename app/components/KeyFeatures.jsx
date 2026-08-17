@@ -35,7 +35,7 @@ const features = [
 
 export default function KeyFeatures() {
   return (
-    <section id="key-features" className="py-24 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-vapor-2 to-white text-vapor">
+    <section id="key-features" className="py-24 px-6 sm:px-12 lg:px-20 bg-gradient-to-b from-vapor-2 to-vapor text-vapor">
       <div className="max-w-7xl mx-auto text-center">
         
         {/* Judul */}
