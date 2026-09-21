@@ -5,10 +5,10 @@ import "./globals.css";
 const grotesk = Space_Grotesk({ variable: "--font-grotesk", subsets: ["latin"], weight: ["500", "600", "700"] });
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"Nimbus Cloud","description":"Layanan cloud untuk bisnis","url":"https://nimbus.pintuweb.com"};
+const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"Nimbus Cloud","description":"Layanan cloud untuk bisnis","url":"https://landing-nimbus.vercel.app"};
 
 export const metadata = {
-  metadataBase: new URL("https://nimbus.pintuweb.com"),
+  metadataBase: new URL("https://landing-nimbus.vercel.app"),
   title: "Nimbus Cloud — Cloud Tercepat & Teraman untuk Bisnis",
   description: "Tingkatkan efisiensi bisnismu dengan layanan cloud tercepat & paling aman. Coba Nimbus Cloud gratis 14 hari.",
   applicationName: "Nimbus Cloud",
@@ -16,11 +16,11 @@ export const metadata = {
   authors: [{ name: "Nimbus Cloud" }],
   creator: "Nimbus Cloud",
   publisher: "Nimbus Cloud",
-  alternates: { canonical: "https://nimbus.pintuweb.com" },
+  alternates: { canonical: "https://landing-nimbus.vercel.app" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://nimbus.pintuweb.com",
+    url: "https://landing-nimbus.vercel.app",
     siteName: "Nimbus Cloud",
     title: "Nimbus Cloud — Cloud Tercepat & Teraman untuk Bisnis",
     description: "Tingkatkan efisiensi bisnismu dengan layanan cloud tercepat & paling aman. Coba Nimbus Cloud gratis 14 hari.",
