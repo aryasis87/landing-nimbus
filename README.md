@@ -1,35 +1,39 @@
-# Next-Gen Cloud Landing Page
+# Nimbus Cloud — Cloud Tercepat & Teraman untuk Bisnis
 
-## Overview
-Landing page ini dirancang untuk menampilkan solusi cloud modern dengan pendekatan click-through. Web ini mengutamakan desain yang elegan, responsif, dan interaktif, sehingga memberikan pengalaman pengguna yang optimal. Setiap section (Hero, Fitur, Testimoni, Visual Showcase, CTA, FAQ, Contact, dan Footer) dirancang dengan animasi yang halus dan interaksi menarik.
+Tingkatkan efisiensi bisnismu dengan layanan cloud tercepat & paling aman. Coba Nimbus Cloud gratis 14 hari.
 
-## Fitur Utama
-- **Hero Section:**  
-  Menampilkan judul utama dengan animasi fade-in, parallax, dan tombol CTA yang interaktif.  
-- **Key Features:**  
-  Menyoroti fitur utama layanan cloud (kecepatan, keamanan, skalabilitas, dan integrasi AI) dengan animasi masuk bergiliran dan efek hover yang responsif.  
-- **Social Proof:**  
-  Menampilkan testimoni pelanggan yang relevan dengan layanan cloud, dengan desain grid elegan, elemen dekoratif (floating shapes), dan animasi masuk saat scroll.  
-- **Visual Showcase:**  
-  Menampilkan galeri visual produk/layanan dengan efek hover 3D, animasi shapes interaktif, dan gambar yang dioptimasi menggunakan Next.js Image.  
-- **CTA Section:**  
-  Call-to-action kedua yang kuat dengan background gradient, partikel dan shapes animasi, serta tombol yang responsif.  
-- **FAQ Section:**  
-  Accordion FAQ interaktif dengan animasi expand/collapse menggunakan Framer Motion.  
-- **Contact Section:**  
-  Formulir kontak atau ikon email sederhana dengan tooltip interaktif untuk memudahkan komunikasi.  
-- **Footer:**  
-  Informasi tambahan, tautan penting, dan detail kontak.
+**Demo live:** https://landing-nimbus.vercel.app
 
-## Teknologi yang Digunakan
-- **Next.js:** Framework React untuk pembuatan website yang cepat dan efisien.
-- **Tailwind CSS:** Framework CSS utility-first untuk desain responsif dan modern.
-- **Framer Motion:** Library animasi untuk interaksi yang halus dan menarik.
-- **React Icons:** Kumpulan ikon untuk meningkatkan tampilan visual.
-- **Next.js Image:** Untuk optimasi gambar secara otomatis dan responsif.
+![Tangkapan layar Nimbus Cloud](public/og.jpg)
 
-## Instalasi
-1. **Clone repository:**
-   ```bash
-   git clone https://github.com/username/next-gen-cloud-landing-page.git
-   cd next-gen-cloud-landing-page
+> Template landing page untuk bisnis fiktif. Formulir di dalamnya hanya demo dan tidak mengirim data.
+
+## Konsep
+
+Bahasa rupa **Halaman Status**: layanan cloud ditampilkan seperti halaman status uptime yang tenang dan dapat diukur.
+
+## Halaman
+
+`/`
+
+## Teknologi
+
+- Next.js 15.5 (App Router) dan React 19
+- Tailwind CSS v4
+- JavaScript
+- Framer Motion, React Icons
+- Font: Space Grotesk, Inter (next/font)
+- SEO: metadata per halaman, Open Graph, JSON-LD, sitemap.xml, dan robots.txt
+
+## Menjalankan secara lokal
+
+```bash
+npm install
+npm run dev
+```
+
+Buka http://localhost:3000. Untuk build produksi: `npm run build` lalu `npm start`.
+
+---
+
+Bagian dari koleksi 17 template landing page di [PortalLanding](https://portal-landing-seven.vercel.app). Dibuat oleh [PintuWeb](https://pintuweb.com), jasa pembuatan website.

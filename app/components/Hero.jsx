@@ -84,18 +84,18 @@ export default function Hero() {
 
       {/* Hero Text */}
       <motion.h1
-        className="text-3xl md:text-6xl lg:text-6xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-vapor-2 via-vapor to-vapor z-10 px-3 md:px-10 max-w-full md:max-w-2xl lg:max-w-7xl"
+        className="text-3xl md:text-6xl lg:text-6xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-frost via-white to-white z-10 px-3 md:px-10 max-w-full md:max-w-2xl lg:max-w-7xl"
         variants={textVariants}
         initial="hidden"
         animate="visible"
         custom={0}
       >
-        Kembangkan Bisnis bersama<br/><span className="text-4xl md:text-7xl lg:text-8xl bg-gradient-to-l from-vapor-2 via-vapor to-vapor bg-clip-text text-transparent font-extrabold">NimbusCloud</span>
+        Kembangkan Bisnis bersama<br/><span className="text-4xl md:text-7xl lg:text-8xl bg-gradient-to-l from-frost via-white to-white bg-clip-text text-transparent font-extrabold">NimbusCloud</span>
       </motion.h1>
 
       {/* Paragraf pembuka adalah isi utama: tidak dikunci pada opacity 0 supaya
           tetap terbaca walau rantai animasinya gagal berjalan. */}
-      <motion.p className="z-10 max-w-3xl px-2 text-lg text-frost-dim md:px-10 md:text-xl lg:px-0">
+      <motion.p className="z-10 max-w-3xl px-2 text-lg text-frost/85 md:px-10 md:text-xl lg:px-0">
         Rasakan kecepatan dan keamanan infrastruktur cloud yang didukung AI untuk
         mempercepat pertumbuhan bisnis Anda.
       </motion.p>

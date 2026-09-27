@@ -13,7 +13,7 @@ export default function Contact() {
     >
       <div className="max-w-md mx-auto text-center">
         <motion.p
-          className="text-base md:text-lg text-frost-dim mb-8"
+          className="text-base md:text-lg text-frost/75 mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -28,6 +28,7 @@ export default function Contact() {
         >
           <motion.a
             href="mailto:contact@example.com"
+            aria-label="Kirim email ke NimbusCloud"
             whileHover={{ x: 5, scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center justify-center p-4 bg-frost rounded-full shadow-md text-vapor text-3xl transition"

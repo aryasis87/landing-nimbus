@@ -61,7 +61,7 @@ export default function CTA() {
         </motion.h2>
 
         <motion.p
-          className="text-lg sm:text-xl text-frost-dim mb-12"
+          className="text-lg sm:text-xl text-frost/75 mb-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}

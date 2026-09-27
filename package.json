@@ -6,11 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "framer-motion": "^12.5.0",
-    "next": "^15.5.20",
+    "next": "^15.5.26",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0"
@@ -19,7 +19,10 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.2.2",
+    "eslint-config-next": "^15.5.26",
     "tailwindcss": "^4"
+  },
+  "overrides": {
+    "postcss": "^8.5.28"
   }
 }
